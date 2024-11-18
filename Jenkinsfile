@@ -33,7 +33,7 @@ pipeline{
    stage("deploy"){
 	   steps{
 
-      sshagent(['deployment']) {
+      sshagent(['deploy']) {
 
 	        sh """
                  
