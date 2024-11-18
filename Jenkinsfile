@@ -56,7 +56,7 @@ stage(backup)
 		  {
   steps{
 
-	  nexusArtifactUploader artifacts: [[artifactId: 'idream-it-solutions', classifier: '', file: 'target/myweb.war', type: 'war']], credentialsId: 'nexus', groupId: 'com.idream.webapp', nexusUrl: '3.110.167.8:8080/nexus/', nexusVersion: 'nexus2', protocol: 'http', repository: 'repoR', version: '1.1'
+	 nexusArtifactUploader credentialsId: 'nexus', groupId: 'com.idream.webapp', nexusUrl: 'http://3.111.170.64:8080/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'repoR', version: '1.1'
 	  
   }
 	
